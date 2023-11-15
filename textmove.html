@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Document</title>
+</head>
+<style>
+    
+    p {
+        font-size: 20px ;
+        background-color: aqua;
+        width: 150px ;
+
+    }
+
+    .ab {
+        width: 150px ;
+        position: fixed ;
+        overflow: hidden;
+    }
+</style>
+<body>
+    <div class="ab">
+        <p class="">TEXT MOVING</p>
+    </div>
+    
+    
+</body>
+<script>
+    let a = document.querySelector("p") ; 
+    let b = 10 ; 
+    window.addEventListener("load",function() {
+        setInterval(function() {
+            b+=10 ;
+             
+            console.log("hello"+ b)  ;
+            document.styleSheets[0].rules[0].style.setProperty("margin-left",b); 
+            a.classList.add("move1") ;
+            a.classList.remove("move1") ; 
+        },1000) ; 
+
+    })
+</script>
+</html>

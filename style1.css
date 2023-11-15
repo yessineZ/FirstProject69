@@ -1,0 +1,178 @@
+body {
+        margin: 0;
+        font-family: Roboto , Arial;
+    }
+
+    .header {
+        height: 100px ;
+        background-color: rgb(228, 226, 224);
+        display: flex ;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center ;
+        position: fixed ;
+        z-index: 100;
+        top : 0 ; 
+        right: 0;
+        left: 0 ;
+
+
+
+
+    }
+    .header a {
+        height: 50px ;
+        margin-left: 14px ;
+        transition: all 0.4s;
+        color :rgb(0, 36, 37) ; 
+        font-weight: 600;
+        font-size: 19px ;
+        background-color: aqua;
+        border-radius: 12px ;
+        text-decoration: none ;
+        color : red ;
+        padding: 10px ;
+        font-family: Roboto,Arial ;
+        
+        
+    }
+
+    .header a:hover {
+        color : rgb(102, 75, 89) ; 
+        font-size: 22px ;
+        box-shadow: inset rgba(236, 8, 8,0.3);
+    }
+    .copyright {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color : rgb(29, 28, 28) ; 
+        z-index: 101;
+
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    i {
+        font-size: 20px ;
+    }
+
+
+    .interface {
+        margin-top: 150px ;
+        margin-left: 590px ;
+        margin-bottom: 200px ;
+        width: 300px ;
+        height: 300px ;
+        background-color: rgb(72, 139, 156);
+        border-radius: 5px ;
+
+    }
+    .buttons {
+        display: grid ;
+        grid-template-columns: 1fr 1fr 1fr ;
+        margin-top: 30px ;
+
+
+    }
+
+
+    .buttons button {
+        color : red ; 
+        border-radius: 10px ;
+        margin: 3px ;
+        font-weight: 500;
+        font-size: 17px ;
+        transition: all 0.2s ;
+        
+    }
+    .aff1 {
+        display: flex ;
+        flex-direction: row ;
+        align-items: center;
+        justify-content: center ;
+         
+
+    }
+
+    .aff2 {
+        margin-top: 13px ;
+        border-radius :5px  ;
+        border: 2px solid rgb(211, 71, 71);
+        height: 25px ;
+
+    }
+
+
+
+
+    .buttons button:hover {
+        box-shadow: inset rgb(236, 236, 236) ;
+        color : rgb(255, 255, 255) ; 
+        font-size: 20px ;
+        background-color: rgb(25, 185, 221) ;
+
+
+    }
+    .buttons .effacer {
+        margin-top: 100px ;
+    }
+
+    .effacer {
+        color : red ;
+        font-size: 20px ;
+        width: 100px ;
+        height: 30px ;
+        border-radius: 8px ;
+        margin-left: 100px ;
+        margin-top: 30px ;
+    }
+
+    .troll {
+        font-size: 20px ;
+        margin-top: 150px ;
+        background-color: aqua ;
+        width: fit-content;
+        color :rgb(208, 29, 29) ;
+        height: fit-content; 
+        animation-name: trollani;
+        animation-duration: 3s;
+        animation-timing-function: ease ;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse ;
+        animation-delay: 1s ;
+    } 
+
+    @keyframes trollani {
+        0% {
+	        background : rgb(23, 112, 222) ; 
+	        transform : translate(0,0) ;
+ 	}
+
+        30% {
+            background-color: rgb(40, 119, 176) ;
+            transform: translate(10px,10px);
+
+        }
+	
+        50% {
+	        background : rgb(99, 201, 229) ; 
+	        transform : translate(30px,30px) ;
+        
+    }
+
+    80% {
+	        background : rgb(39, 180, 201) ; 
+	        transform : translate(60px,60px) ;
+        
+    }
+
+    100% {
+	        background : rgb(44, 119, 210) ; 
+	        transform : translate(80px,80px) ;
+        
+    }
+
+}
